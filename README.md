@@ -40,7 +40,7 @@
 
 ## 三步上手
 
-1. [下载 Windows 版](https://nuttle.dev/download/windows?src=github)（或到官网 [nuttle.dev](https://nuttle.dev)）（Windows，十几 MB，不用注册）
+1. [下载 Windows 版](https://nuttle.dev/download/windows?src=github)（十几 MB，不用注册；也可以到官网 [nuttle.dev](https://nuttle.dev)）
 2. 在「插件」里点一下安装要存的平台
 3. 照常浏览，回到囤囤鼠，看过的内容都在
 
