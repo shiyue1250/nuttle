@@ -40,7 +40,7 @@
 
 ## 三步上手
 
-1. 到 [nuttle.dev](https://nuttle.dev) 下载安装（Windows，十几 MB，不用注册）
+1. [下载 Windows 版](https://nuttle.dev/download/windows?src=github)（或到官网 [nuttle.dev](https://nuttle.dev)）（Windows，十几 MB，不用注册）
 2. 在「插件」里点一下安装要存的平台
 3. 照常浏览，回到囤囤鼠，看过的内容都在
 
@@ -72,4 +72,4 @@
 - **A thousand comments, one feature-request list.** Hand a scope to your own AI agent (Claude Code, Codex, any MCP client); every quote links back to the original comment.
 - Filter and sort · export to CSV · star and tag · back to the source · capture any website with Discover.
 
-No login or API keys · no auto-scrolling, no bulk requests · data stays on your machine. Windows first, Mac in the works.
+No login or API keys · no auto-scrolling, no bulk requests · data stays on your machine. Windows first, Mac in the works. [Download for Windows](https://nuttle.dev/download/windows?src=github)
