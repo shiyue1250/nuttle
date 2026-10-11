@@ -36,6 +36,12 @@ claude plugin marketplace add shiyue1250/nuttle-registry
 claude plugin install nuttle@nuttle
 ```
 
+Claude Desktop (and other clients that only launch local commands) use the [`nuttle-mcp`](mcp/) bridge in `claude_desktop_config.json`:
+
+```json
+{ "mcpServers": { "nuttle": { "command": "npx", "args": ["-y", "nuttle-mcp"] } } }
+```
+
 Other clients (Cursor, Codex, …) point at `http://127.0.0.1:8787/mcp`; for Codex add `[mcp_servers.nuttle]` with `url = "http://127.0.0.1:8787/mcp"` to `~/.codex/config.toml`.
 
 Then ask things like:

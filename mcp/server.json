@@ -1,0 +1,11 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.shiyue1250/nuttle",
+  "description": "Query the posts, comment trees and videos you've browsed, saved locally by the Nuttle app.",
+  "repository": { "url": "https://github.com/shiyue1250/nuttle", "source": "github", "subfolder": "mcp" },
+  "websiteUrl": "https://nuttle.dev/en/claude-code-mcp/",
+  "version": "0.1.0",
+  "packages": [
+    { "registryType": "npm", "identifier": "nuttle-mcp", "version": "0.1.0", "transport": { "type": "stdio" } }
+  ]
+}

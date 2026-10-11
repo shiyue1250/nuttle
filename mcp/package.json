@@ -1,0 +1,13 @@
+{
+  "name": "nuttle-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Nuttle: let Claude Desktop and other stdio MCP clients query the posts, comment trees and videos you've browsed (Reddit, X and more), saved locally by the Nuttle desktop app.",
+  "mcpName": "io.github.shiyue1250/nuttle",
+  "bin": { "nuttle-mcp": "index.js" },
+  "files": ["index.js", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "keywords": ["mcp", "model-context-protocol", "claude", "reddit", "comments", "local-first", "nuttle"],
+  "homepage": "https://nuttle.dev/en/claude-code-mcp/",
+  "repository": { "type": "git", "url": "git+https://github.com/shiyue1250/nuttle.git", "directory": "mcp" },
+  "license": "MIT"
+}
