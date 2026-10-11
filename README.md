@@ -1,70 +1,19 @@
-<p align="center"><img src="icon.png" width="96" alt="囤囤鼠 Nuttle"></p>
+<p align="center"><img src="icon.png" width="96" alt="Nuttle"></p>
 
-<h1 align="center">囤囤鼠 Nuttle</h1>
+<h1 align="center">Nuttle</h1>
 
-<p align="center"><b>看过的，都替你存好了。</b><br>
-小红书评论导出 · 公众号文章与留言保存 · 视频号视频下载 · 评论整理成需求清单</p>
+<p align="center"><b>Everything you browse, saved for you — and one question away for your AI agent.</b><br>
+Export Reddit comments with every nested reply · Save X posts and replies · Download the videos you watched · Query it all from Claude Code over MCP</p>
 
-<p align="center"><a href="https://nuttle.dev"><b>官网 nuttle.dev</b></a> · <a href="https://nuttle.dev/en/">English</a> · <a href="#english">English below</a></p>
-
-<p align="center"><img src="preview-zh.png" alt="囤囤鼠：小红书笔记评论连楼中楼自动保存（界面示意）" width="800"></p>
-
-刷小红书、视频号、公众号、抖音的时候，笔记、评论连楼中楼、视频原文件自动存到你的电脑。想导成表格、下载视频，或者让 AI 把上千条评论整理成需求清单，点一下就行。
-
-- ✓ 不用扫码登录　✓ 不自动翻页、不批量抓　✓ 数据只在你电脑上
-
-## 能做什么
-
-### 小红书评论导出，楼中楼一条不漏
-打开笔记往下翻，评论和回复（含 IP 属地、点赞数）自动存好，一键导出 CSV，Excel、WPS、飞书表格都能打开。
-
-### 公众号文章、留言、阅读数，一起存下来
-在电脑版微信里打开文章，正文排版、配图、读者留言（含回复）和阅读 / 赞 / 在看数自动保存，适合拆解爆文、行业文章留档。
-
-### 视频号、抖音、小红书视频，看过就能下原文件
-看过的视频都在列表里，点下载就是原文件；视频号加密视频自动解密，Reddit 画面与声音分开的视频自动合成。
-
-### 上千条评论，变成一张需求清单
-选好范围（平台、时间、收藏的内容），交给你自己的 AI（Claude Code、Codex 等）做需求发现、痛点归类或评论总结；结论里的每句原话都能点回原评论核对。
-
-### 存下来之后
-- 按点赞、时间、作者、IP 属地筛选排序
-- 按当前筛选导出 CSV
-- 收藏与标签
-- 每条内容记着原文链接，一键回原文
-- 没有插件的网站，打开「发现」也能先存下来
-
-## 支持的平台
-
-小红书 · 微信视频号 · 公众号 · 抖音 · 快手 · B 站 · X · Reddit · YouTube · Instagram · Amazon
-
-## 三步上手
-
-1. [下载 Windows 版](https://nuttle.dev/download/windows?src=github)（十几 MB，不用注册；也可以到官网 [nuttle.dev](https://nuttle.dev)）
-2. 在「插件」里点一下安装要存的平台
-3. 照常浏览，回到囤囤鼠，看过的内容都在
-
-## 常见问题
-
-**会不会被封号？** 囤囤鼠不额外发请求、不自动翻页，只保存你浏览时页面本来就加载出来的内容，行为和你自己刷一样。平台规则由平台决定，我们无法替平台做保证。
-
-**数据会上传吗？** 不会。全部存在你电脑上的本地数据库里，没有账号。
-
-**视频号和公众号怎么保存？** 在电脑版微信里正常观看即可；第一次使用需要在设置里装一次本机证书。
-
-**能接哪些 AI？** Claude Code、Codex 以及任何支持 MCP 的 AI 客户端。
-
-**支持 Mac 吗？** 先开放 Windows 版，Mac 版在准备中。
-
----
-
-<a id="english"></a>
-
-## English
-
-**Everything you browse, saved for you.** As you scroll Reddit, X, YouTube or Instagram, Nuttle quietly keeps the posts, the full comment trees and the original videos on your computer. → **[nuttle.dev/en](https://nuttle.dev/en/)**
+<p align="center"><a href="https://nuttle.dev/en/"><b>nuttle.dev</b></a> · <a href="https://nuttle.dev/en/claude-code-mcp/">Claude Code MCP guide</a> · <a href="README.zh-CN.md">中文</a></p>
 
 <p align="center"><img src="preview.png" alt="Nuttle: a Reddit thread saved with nested replies (illustration)" width="800"></p>
+
+As you scroll Reddit, X, YouTube or Instagram, Nuttle quietly keeps the posts, the full comment trees and the original videos on your computer. Export a thread to CSV, download a video, or have your AI agent turn a thousand comments into one feature-request list.
+
+- ✓ No login or API keys　✓ No auto-scrolling, no bulk requests　✓ Data stays on your machine
+
+## What it does
 
 - **Export Reddit comments — every nested reply included.** Open a thread and scroll; one click to CSV.
 - **Save X posts and their replies** — text, metrics, replies and images, searchable.
@@ -72,4 +21,50 @@
 - **A thousand comments, one feature-request list.** Hand a scope to your own AI agent (Claude Code, Codex, any MCP client); every quote links back to the original comment.
 - Filter and sort · export to CSV · star and tag · back to the source · capture any website with Discover.
 
-No login or API keys · no auto-scrolling, no bulk requests · data stays on your machine. Windows first, Mac in the works. [Download for Windows](https://nuttle.dev/download/windows?src=github)
+## Use it with Claude Code or any MCP client
+
+Nuttle runs a local MCP server (streamable HTTP, localhost only) while the app is open:
+
+```bash
+claude mcp add --transport http nuttle http://127.0.0.1:8787/mcp
+```
+
+Or install the Claude Code plugin — same connection, plus a skill that turns any site you browsed into a reusable mapping card:
+
+```bash
+claude plugin marketplace add shiyue1250/nuttle-registry
+claude plugin install nuttle@nuttle
+```
+
+Other clients (Cursor, Codex, …) point at `http://127.0.0.1:8787/mcp`; for Codex add `[mcp_servers.nuttle]` with `url = "http://127.0.0.1:8787/mcp"` to `~/.codex/config.toml`.
+
+Then ask things like:
+
+- *"What did people complain about in the Reddit threads I read today?"*
+- *"Wait while I scroll this thread, then summarize the replies."*
+- *"Group these comments into feature requests, with quotes."*
+- *"Download the videos from those posts."*
+
+32 tools cover a post with its full comment tree in one call, waiting for new data while you scroll, raw captures from any site (with code-free field mapping), media downloads, and insight jobs whose quotes are checked against the captured comments. Tags you set yourself can't be overwritten by the agent. Guide: [nuttle.dev/en/claude-code-mcp](https://nuttle.dev/en/claude-code-mcp/)
+
+## Supported sites
+
+Reddit · X · YouTube · Instagram · Amazon · Xiaohongshu (RedNote) · WeChat Channels · WeChat articles · Douyin · Kuaishou · Bilibili — plus any other site through Discover.
+
+## Get started
+
+1. [Download for Windows](https://nuttle.dev/download/windows?src=github) (about 6 MB, no sign-up), or from [nuttle.dev](https://nuttle.dev/en/)
+2. Turn on the sites you want under Plugins
+3. Browse as usual — come back to Nuttle and it's all there
+
+## FAQ
+
+**Will my account get banned?** Nuttle sends no extra requests and never scrolls for you; it only keeps what the page already loaded while you browsed, the same as you scrolling yourself. Platform rules are up to each platform, and we can't guarantee them.
+
+**Is anything uploaded?** No. Everything lives in a local database on your computer, and there's no account. The MCP server only listens on localhost; what your agent reads is passed to its model like any other tool result.
+
+**Which AI agents work?** Claude Code, Codex and any MCP client that supports streamable HTTP.
+
+**Mac?** Windows first; Mac is in the works.
+
+**Is it open source?** The app is free and closed source. The Claude Code plugin and the mapping cards are public at [shiyue1250/nuttle-registry](https://github.com/shiyue1250/nuttle-registry).
