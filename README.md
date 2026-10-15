@@ -7,6 +7,8 @@ Export Reddit comments with every nested reply · Save X posts and replies · Do
 
 <p align="center"><a href="https://nuttle.dev/en/"><b>nuttle.dev</b></a> · <a href="https://nuttle.dev/en/claude-code-mcp/">Claude Code MCP guide</a> · <a href="README.zh-CN.md">中文</a></p>
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/shiyue1250-nuttle-1kowow?v=6c3dde32ec07d5915387e959c8bc5172)](https://m8ven.ai/mcp/shiyue1250-nuttle-1kowow?s=readme)
+
 <p align="center"><img src="preview.png" alt="Nuttle: a Reddit thread saved with nested replies (illustration)" width="800"></p>
 
 As you scroll Reddit, X, YouTube or Instagram, Nuttle quietly keeps the posts, the full comment trees and the original videos on your computer. Export a thread to CSV, download a video, or have your AI agent turn a thousand comments into one feature-request list.
